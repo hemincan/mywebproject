@@ -28,7 +28,7 @@ public class UserService {
 
  
     public void addUser(User user) {
-    	List<User> userlist=userMapper.findPage( 1, 2);
+    	List<User> userlist=userMapper.findPage( 1, 3);
     	System.out.println(userlist.size());
         userMapper.insert(user);
     }
